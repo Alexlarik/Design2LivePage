@@ -2,39 +2,47 @@
     box-sizing: border-box;
 }
 
-header {
+.main-header {
     background-color: rgb(76, 73, 66);
+    display: grid;
+
+
 }
 
 .journal {
     color: darkgreen;
 }
 
-.main-nav {}
-
 ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
     font-size: large;
+    list-style-type: none;
 
 }
 
 .main-content {
     display: grid;
-    grid-template-columns:
-        minmax(1fr, 1060px)
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .card {
+
+    gap: 10px;
     display: flex;
+    flex-direction: row;
 
 }
 
 .card-image {
-    width: 50px;
+    width: 150px;
 }
 
-main>* {
-    grid-column: 2;
+.footer {
+    margin: 20px;
+    background-color: lightgray;
 }
+
+/* 
+.main-layout>*.full {
+    grid-column: 1/-1;
+
+} */
