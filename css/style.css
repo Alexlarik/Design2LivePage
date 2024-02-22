@@ -1,11 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
-    background-color: rgba(0, 0, 0, 0.695);
+    background-color: rgb(76, 73, 66);
 }
 
 .journal {
     color: darkgreen;
 }
 
+.main-nav {}
+
 ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     font-size: large;
+
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns:
+        minmax(1fr, 1060px)
+}
+
+.card {
+    display: flex;
+
+}
+
+.card-image {
+    width: 50px;
+}
+
+main>* {
+    grid-column: 2;
 }
